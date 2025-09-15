@@ -26,36 +26,36 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection("inicio")}
+            <a 
+              href="/#inicio"
               className="text-foreground hover:text-cms-red transition-smooth"
             >
               Início
-            </button>
-            <button 
-              onClick={() => scrollToSection("sobre")}
+            </a>
+            <a 
+              href="/#sobre"
               className="text-foreground hover:text-cms-red transition-smooth"
             >
               Sobre
-            </button>
-            <button 
-              onClick={() => scrollToSection("servicos")}
+            </a>
+            <a 
+              href="/#servicos"
               className="text-foreground hover:text-cms-red transition-smooth"
             >
               Serviços
-            </button>
-            <button 
-              onClick={() => scrollToSection("bairros")}
+            </a>
+            <a 
+              href="/#bairros"
               className="text-foreground hover:text-cms-red transition-smooth"
             >
               Bairros Atendidos
-            </button>
-            <button 
-              onClick={() => scrollToSection("contato")}
+            </a>
+            <a 
+              href="/#contato"
               className="text-foreground hover:text-cms-red transition-smooth"
             >
               Contato
-            </button>
+            </a>
           </nav>
 
           {/* WhatsApp Button & Mobile Menu */}

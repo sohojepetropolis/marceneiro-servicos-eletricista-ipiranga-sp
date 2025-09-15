@@ -6,19 +6,20 @@ export const NeighborhoodsSection = () => {
     { name: "Moema", highlight: true },
     { name: "Brooklin", highlight: true },
     { name: "Campo Belo", highlight: true },
-    { name: "Vila Mariana", highlight: false },
     { name: "Vila Olímpia", highlight: true },
+    { name: "Itaim Bibi", highlight: true },
+    { name: "Ipiranga", highlight: true },
+    { name: "Vila Nova Conceição", highlight: false },
+    { name: "Jardim Paulista", highlight: false },
+    { name: "Cidade Jardim", highlight: false },
+    { name: "Jardim Europa", highlight: false },
+    { name: "Vila Mariana", highlight: false },
     { name: "Chácara Santo Antônio", highlight: false },
     { name: "Socorro", highlight: false },
-    { name: "Cidade Jardim", highlight: true },
-    { name: "Itaim Bibi", highlight: true },
-    { name: "Vila Nova Conceição", highlight: true },
-    { name: "Jardim Paulista", highlight: true },
     { name: "Paraíso", highlight: false },
     { name: "Vila Cordeiro", highlight: false },
     { name: "Chácara Klabin", highlight: false },
-    { name: "Planalto Paulista", highlight: false },
-    { name: "Jardim Europa", highlight: true }
+    { name: "Planalto Paulista", highlight: false }
   ];
 
   return (

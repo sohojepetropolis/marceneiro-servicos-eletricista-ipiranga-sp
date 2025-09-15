@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Wrench, Zap, Hammer, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import encanadorImage from "@/assets/encanador-cms-express.png";
 import eletricistaImage from "@/assets/eletricista-cms-express.png";
 import marcenariaImage from "@/assets/marcenaria-cms-express.png";
@@ -8,7 +9,8 @@ import marcenariaImage from "@/assets/marcenaria-cms-express.png";
 export const ServicesSection = () => {
   const services = [
     {
-      title: "Serviços de Encanamento",
+      title: "Encanador",
+      slug: "encanador",
       icon: <Wrench className="h-8 w-8 text-cms-red" />,
       image: encanadorImage,
       description: "Soluções completas em sistemas hidráulicos para sua residência",
@@ -24,7 +26,8 @@ export const ServicesSection = () => {
       ]
     },
     {
-      title: "Serviços Elétricos",
+      title: "Eletricista",
+      slug: "eletricista",
       icon: <Zap className="h-8 w-8 text-cms-red" />,
       image: eletricistaImage,
       description: "Instalações elétricas seguras e eficientes para seu lar",
@@ -40,7 +43,8 @@ export const ServicesSection = () => {
       ]
     },
     {
-      title: "Serviços de Marcenaria",
+      title: "Marcenaria",
+      slug: "marcenaria",
       icon: <Hammer className="h-8 w-8 text-cms-red" />,
       image: marcenariaImage,
       description: "Móveis sob medida e soluções em madeira de alta qualidade",
@@ -103,14 +107,27 @@ export const ServicesSection = () => {
                   ))}
                 </ul>
                 
-                <Button 
-                  variant="cms" 
-                  className="w-full"
-                  onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
-                >
-                  <Phone className="h-4 w-4" />
-                  Solicitar Orçamento
-                </Button>
+                <div className="flex gap-2">
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="flex-1"
+                  >
+                    <Link to={`/${service.slug}`}>
+                      Ver Mais
+                    </Link>
+                  </Button>
+                  <Button 
+                    variant="cms"
+                    size="sm"
+                    className="flex-1"
+                    onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
+                  >
+                    <Phone className="h-4 w-4" />
+                    Orçamento
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
