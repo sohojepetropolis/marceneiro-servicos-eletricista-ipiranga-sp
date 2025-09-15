@@ -72,7 +72,7 @@ export const HeroSection = () => {
               <img 
                 src={equipeImage} 
                 alt="Equipe profissional CMS Express - Encanadores, Eletricistas e Marceneiros especializados em bairros nobres da zona sul de São Paulo"
-                className="rounded-2xl shadow-elegant w-full h-48 object-cover"
+                className="rounded-2xl shadow-elegant w-full h-64 object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-card">
