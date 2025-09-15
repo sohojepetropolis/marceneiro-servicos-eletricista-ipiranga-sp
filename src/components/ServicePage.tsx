@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { ServiceBreadcrumb } from "@/components/ServiceBreadcrumb";
+import { NeighborhoodMap } from "@/components/NeighborhoodMap";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -188,34 +189,42 @@ export const ServicePage = ({ service, neighborhood }: ServicePageProps) => {
         {neighborhood && (
           <section className="py-16 bg-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl font-bold mb-6">
-                  Por que escolher nossos serviços em {neighborhood.name}?
-                </h2>
-                <p className="text-lg text-muted-foreground mb-8">
-                  {neighborhood.description}. Nossa equipe conhece bem a região e oferece 
-                  atendimento personalizado para as necessidades específicas do bairro.
-                </p>
-                
-                <div className="grid md:grid-cols-2 gap-8 text-left">
+              <div className="max-w-6xl mx-auto">
+                <div className="grid lg:grid-cols-2 gap-12 items-start">
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">Vantagens do nosso atendimento:</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li>• Conhecimento específico da região</li>
-                      <li>• Tempo de resposta otimizado</li>
-                      <li>• Materiais adequados para cada tipo de imóvel</li>
-                      <li>• Relacionamento de confiança com síndicos e administradoras</li>
-                    </ul>
+                    <h2 className="text-3xl font-bold mb-6">
+                      Por que escolher nossos serviços em {neighborhood.name}?
+                    </h2>
+                    <p className="text-lg text-muted-foreground mb-8">
+                      {neighborhood.description}. Nossa equipe conhece bem a região e oferece 
+                      atendimento personalizado para as necessidades específicas do bairro.
+                    </p>
+                    
+                    <div className="grid md:grid-cols-1 gap-8 text-left">
+                      <div>
+                        <h3 className="text-xl font-semibold mb-4">Vantagens do nosso atendimento:</h3>
+                        <ul className="space-y-2 text-muted-foreground mb-6">
+                          <li>• Conhecimento específico da região</li>
+                          <li>• Tempo de resposta otimizado</li>
+                          <li>• Materiais adequados para cada tipo de imóvel</li>
+                          <li>• Relacionamento de confiança com síndicos e administradoras</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h3 className="text-xl font-semibold mb-4">Atendimento especializado:</h3>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Orçamento gratuito e transparente</li>
+                          <li>• Profissionais uniformizados e identificados</li>
+                          <li>• Garantia em todos os serviços</li>
+                          <li>• Pagamento facilitado (dinheiro, PIX, cartão)</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   
                   <div>
-                    <h3 className="text-xl font-semibold mb-4">Atendimento especializado:</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li>• Orçamento gratuito e transparente</li>
-                      <li>• Profissionais uniformizados e identificados</li>
-                      <li>• Garantia em todos os serviços</li>
-                      <li>• Pagamento facilitado (dinheiro, PIX, cartão)</li>
-                    </ul>
+                    <NeighborhoodMap neighborhood={neighborhood} />
                   </div>
                 </div>
               </div>
