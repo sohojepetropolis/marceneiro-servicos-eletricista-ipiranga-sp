@@ -5,7 +5,21 @@ import { useSEO } from "@/hooks/useSEO";
 import NotFound from "@/pages/NotFound";
 
 const ServiceNeighborhoodPage = () => {
-  const { serviceSlug, neighborhoodSlug } = useParams();
+  const { serviceSlug, neighborhoodSlug, combined } = useParams();
+
+  console.info('ServiceNeighborhoodPage params:', { serviceSlug, neighborhoodSlug, combined });
+
+  // Handle combined parameter (fallback route)
+  let finalServiceSlug = serviceSlug;
+  let finalNeighborhoodSlug = neighborhoodSlug;
+  
+  if (combined && !serviceSlug && !neighborhoodSlug) {
+    const hyphenIndex = combined.indexOf('-');
+    if (hyphenIndex > 0) {
+      finalServiceSlug = combined.substring(0, hyphenIndex);
+      finalNeighborhoodSlug = combined.substring(hyphenIndex + 1);
+    }
+  }
 
   // Normalize slugs (lowercase, trim, remove accents, replace spaces with hyphens)
   const normalize = (str?: string) =>
@@ -17,15 +31,15 @@ const ServiceNeighborhoodPage = () => {
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/\s+/g, '-');
 
-  const sSlug = normalize(serviceSlug);
-  const nSlug = normalize(neighborhoodSlug);
+  const sSlug = normalize(finalServiceSlug);
+  const nSlug = normalize(finalNeighborhoodSlug);
 
   const service = services.find((s) => normalize(s.slug) === sSlug || normalize(s.name) === sSlug);
   const neighborhood = neighborhoods.find((n) => normalize(n.slug) === nSlug || normalize(n.name) === nSlug);
 
   if (!service || !neighborhood) {
     console.error('404 Service/Neighborhood not found', {
-      received: { serviceSlug, neighborhoodSlug, sSlug, nSlug },
+      received: { serviceSlug, neighborhoodSlug, combined, finalServiceSlug, finalNeighborhoodSlug, sSlug, nSlug },
       availableServices: services.map((s) => s.slug),
       availableNeighborhoods: neighborhoods.map((n) => n.slug),
     });

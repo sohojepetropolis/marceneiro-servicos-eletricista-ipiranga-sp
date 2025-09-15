@@ -28,6 +28,7 @@ const App = () => (
           
           {/* Service + Neighborhood Pages */}
           <Route path="/:serviceSlug-:neighborhoodSlug" element={<ServiceNeighborhoodPage />} />
+          <Route path="/:combined" element={<ServiceNeighborhoodPage />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
