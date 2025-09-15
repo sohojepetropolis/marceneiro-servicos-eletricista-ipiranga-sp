@@ -112,7 +112,7 @@ export const ServicesSection = () => {
                     variant="outline"
                     size="sm"
                     asChild
-                    className="flex-1"
+                    className="flex-1 text-foreground hover:text-accent-foreground"
                   >
                     <Link to={`/${service.slug}`}>
                       Ver Mais

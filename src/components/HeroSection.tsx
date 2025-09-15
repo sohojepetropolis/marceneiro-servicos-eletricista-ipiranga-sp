@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, CheckCircle } from "lucide-react";
 import equipeImage from "@/assets/equipe-cms-express.png";
+import escritorioImage from "@/assets/escritorio-cms-express.png";
 
 export const HeroSection = () => {
   return (
@@ -62,11 +63,18 @@ export const HeroSection = () => {
 
           {/* Image */}
           <div className="relative">
-            <img 
-              src={equipeImage} 
-              alt="Equipe profissional CMS Express - Encanadores, Eletricistas e Marceneiros especializados em bairros nobres da zona sul de São Paulo"
-              className="rounded-2xl shadow-elegant w-full"
-            />
+            <div className="grid grid-cols-1 gap-6">
+              <img 
+                src={escritorioImage} 
+                alt="Escritório CMS Express - Empresa especializada em serviços de encanamento, elétrica e marcenaria na zona sul de São Paulo"
+                className="rounded-2xl shadow-elegant w-full h-64 object-cover"
+              />
+              <img 
+                src={equipeImage} 
+                alt="Equipe profissional CMS Express - Encanadores, Eletricistas e Marceneiros especializados em bairros nobres da zona sul de São Paulo"
+                className="rounded-2xl shadow-elegant w-full h-48 object-cover"
+              />
+            </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-card">
               <div className="text-center">
                 <div className="text-2xl font-bold text-cms-red">5+</div>
