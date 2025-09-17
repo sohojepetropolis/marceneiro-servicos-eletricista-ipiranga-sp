@@ -64,7 +64,10 @@ export const Header = () => {
               variant="whatsapp" 
               size="sm"
               className="hidden sm:flex"
-              onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
+              onClick={() => {
+                const message = "Olá! Encontrei a CMS Express e gostaria de saber mais sobre os serviços disponíveis.";
+                window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+              }}
             >
               <Phone className="h-4 w-4" />
               WhatsApp
@@ -118,7 +121,10 @@ export const Header = () => {
                 variant="whatsapp" 
                 size="sm"
                 className="mt-2 w-fit"
-                onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
+                onClick={() => {
+                  const message = "Olá! Encontrei a CMS Express e gostaria de saber mais sobre os serviços disponíveis.";
+                  window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+                }}
               >
                 <Phone className="h-4 w-4" />
                 WhatsApp

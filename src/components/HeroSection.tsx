@@ -46,7 +46,10 @@ export const HeroSection = () => {
               <Button 
                 variant="hero" 
                 size="lg"
-                onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
+                onClick={() => {
+                  const message = "Olá! Vi os serviços no site da CMS Express e gostaria de solicitar um orçamento para encanamento/elétrica/marcenaria na zona sul.";
+                  window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+                }}
               >
                 <Phone className="h-5 w-5" />
                 Solicitar Orçamento Grátis

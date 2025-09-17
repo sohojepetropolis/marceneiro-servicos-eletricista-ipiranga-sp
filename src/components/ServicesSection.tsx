@@ -122,7 +122,15 @@ export const ServicesSection = () => {
                     variant="cms"
                     size="sm"
                     className="flex-1"
-                    onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
+                    onClick={() => {
+                      const serviceMessages = {
+                        "Encanador": "Olá! Preciso de um encanador na zona sul. Vi no site da CMS Express e gostaria de um orçamento.",
+                        "Eletricista": "Olá! Preciso de um eletricista na zona sul. Vi no site da CMS Express e gostaria de um orçamento.",
+                        "Marcenaria": "Olá! Preciso de serviços de marcenaria na zona sul. Vi no site da CMS Express e gostaria de um orçamento."
+                      };
+                      const message = serviceMessages[service.title as keyof typeof serviceMessages];
+                      window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+                    }}
                   >
                     <Phone className="h-4 w-4" />
                     Orçamento
@@ -137,7 +145,10 @@ export const ServicesSection = () => {
           <Button 
             variant="hero" 
             size="lg"
-            onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
+            onClick={() => {
+              const message = "Olá! Vi todos os serviços no site da CMS Express e gostaria de falar com um especialista para solicitar orçamento.";
+              window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+            }}
           >
             <Phone className="h-5 w-5" />
             Falar com Especialista no WhatsApp

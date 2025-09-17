@@ -19,7 +19,8 @@ export const WhatsAppFloat = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511920041659", "_blank");
+    const message = "Olá! Vim através do site da CMS Express e gostaria de solicitar um orçamento.";
+    window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   if (!isVisible) return null;
