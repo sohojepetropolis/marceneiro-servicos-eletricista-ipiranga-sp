@@ -37,4 +37,4 @@ User-agent: Applebot
 Allow: /
 
 # Sitemap location
-Sitemap: https://preview--neon-proposal-flow.lovable.app/sitemap.xml
+Sitemap: https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/sitemap.xml
