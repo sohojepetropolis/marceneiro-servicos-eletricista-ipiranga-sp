@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Wrench, Zap, Hammer, Phone } from "lucide-react";
+import { Wrench, Zap, Hammer, Phone, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import encanadorImage from "@/assets/encanador-cms-express.png";
 import eletricistaImage from "@/assets/eletricista-cms-express.png";
@@ -58,6 +58,23 @@ export const ServicesSection = () => {
         "Serviços de carpintaria residencial",
         "Restauração de móveis antigos"
       ]
+    },
+    {
+      title: "Montador de Móveis",
+      slug: "montador-de-moveis",
+      icon: <Settings className="h-8 w-8 text-cms-red" />,
+      image: marcenariaImage,
+      description: "Especialistas em montagem profissional de móveis residenciais",
+      services: [
+        "Montagem de móveis planejados",
+        "Montagem de estantes e prateleiras",
+        "Instalação de guarda-roupas",
+        "Montagem de cozinhas modulares",
+        "Instalação de painéis e divisórias", 
+        "Montagem de mesas e cadeiras",
+        "Instalação de móveis de escritório",
+        "Serviços de desmontagem e remontagem"
+      ]
     }
   ];
 
@@ -74,7 +91,7 @@ export const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-elegant transition-smooth">
               <CardHeader className="text-center">
@@ -126,7 +143,8 @@ export const ServicesSection = () => {
                       const serviceMessages = {
                         "Encanador": "Olá! Preciso de um encanador na zona sul. Vi no site da CMS Express e gostaria de um orçamento.",
                         "Eletricista": "Olá! Preciso de um eletricista na zona sul. Vi no site da CMS Express e gostaria de um orçamento.",
-                        "Marcenaria": "Olá! Preciso de serviços de marcenaria na zona sul. Vi no site da CMS Express e gostaria de um orçamento."
+                        "Marcenaria": "Olá! Preciso de serviços de marcenaria na zona sul. Vi no site da CMS Express e gostaria de um orçamento.",
+                        "Montador de Móveis": "Olá! Preciso de um montador de móveis na zona sul. Vi no site da CMS Express e gostaria de um orçamento."
                       };
                       const message = serviceMessages[service.title as keyof typeof serviceMessages];
                       window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");

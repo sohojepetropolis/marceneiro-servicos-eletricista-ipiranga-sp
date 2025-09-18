@@ -154,5 +154,22 @@ export const services = [
       "Restauração de móveis antigos",
       "Instalação de closets"
     ]
+  },
+  {
+    name: "Montador de Móveis",
+    slug: "montador-de-moveis",
+    title: "Serviços de Montagem de Móveis",
+    description: "Especialistas em montagem e instalação de móveis residenciais e comerciais",
+    icon: "Wrench",
+    services: [
+      "Montagem de móveis planejados",
+      "Montagem de estantes e prateleiras",
+      "Instalação de guarda-roupas",
+      "Montagem de cozinhas modulares",
+      "Instalação de painéis e divisórias",
+      "Montagem de mesas e cadeiras",
+      "Instalação de móveis de escritório",
+      "Serviços de desmontagem e remontagem"
+    ]
   }
 ];

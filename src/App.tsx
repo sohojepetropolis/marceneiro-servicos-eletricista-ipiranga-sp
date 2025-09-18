@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import PlumbingPage from "./pages/services/PlumbingPage";
 import ElectricalPage from "./pages/services/ElectricalPage";
 import CarpentryPage from "./pages/services/CarpentryPage";
+import FurnitureAssemblyPage from "./pages/services/FurnitureAssemblyPage";
 import ServiceNeighborhoodPage from "./pages/services/ServiceNeighborhoodPage";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/encanador" element={<PlumbingPage />} />
           <Route path="/eletricista" element={<ElectricalPage />} />
           <Route path="/marcenaria" element={<CarpentryPage />} />
+          <Route path="/montador-de-moveis" element={<FurnitureAssemblyPage />} />
           
           {/* Service + Neighborhood Pages */}
           <Route path="/:serviceSlug-:neighborhoodSlug" element={<ServiceNeighborhoodPage />} />
