@@ -28,6 +28,10 @@ const App = () => (
           <Route path="/eletricista" element={<ElectricalPage />} />
           <Route path="/marcenaria" element={<CarpentryPage />} />
           <Route path="/montador-de-moveis" element={<FurnitureAssemblyPage />} />
+
+          {/* Guides */}
+          <Route path="/guia-moveis-planejados-vs-sob-medida" element={<MoveisPlanejadosVsSobMedidaPage />} />
+
           
           {/* Service + Neighborhood Pages */}
           <Route path="/:serviceSlug-:neighborhoodSlug" element={<ServiceNeighborhoodPage />} />
