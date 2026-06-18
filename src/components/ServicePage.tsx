@@ -34,7 +34,7 @@ const iconMap = {
 
 export const ServicePage = ({ service, neighborhood }: ServicePageProps) => {
   const Icon = iconMap[service.icon as keyof typeof iconMap];
-  const whatsappNumber = "5511920041659";
+  const whatsappNumber = "5511977480538";
   const serviceArea = neighborhood ? neighborhood.name : "Zona Sul de São Paulo";
   
   const whatsappMessage = neighborhood 
