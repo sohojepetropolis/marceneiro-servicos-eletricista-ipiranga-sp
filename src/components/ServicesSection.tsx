@@ -147,7 +147,7 @@ export const ServicesSection = () => {
                         "Montador de Móveis": "Olá! Preciso de um montador de móveis na zona sul. Vi no site da CMS Express e gostaria de um orçamento."
                       };
                       const message = serviceMessages[service.title as keyof typeof serviceMessages];
-                      window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+                      window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
                     }}
                   >
                     <Phone className="h-4 w-4" />
@@ -165,7 +165,7 @@ export const ServicesSection = () => {
             size="lg"
             onClick={() => {
               const message = "Olá! Vi todos os serviços no site da CMS Express e gostaria de falar com um especialista para solicitar orçamento.";
-              window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+              window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
             }}
           >
             <Phone className="h-5 w-5" />

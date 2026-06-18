@@ -66,7 +66,7 @@ export const Header = () => {
               className="hidden sm:flex"
               onClick={() => {
                 const message = "Olá! Encontrei a CMS Express e gostaria de saber mais sobre os serviços disponíveis.";
-                window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+                window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
               }}
             >
               <Phone className="h-4 w-4" />
@@ -123,7 +123,7 @@ export const Header = () => {
                 className="mt-2 w-fit"
                 onClick={() => {
                   const message = "Olá! Encontrei a CMS Express e gostaria de saber mais sobre os serviços disponíveis.";
-                  window.open(`https://wa.me/5511920041659?text=${encodeURIComponent(message)}`, "_blank");
+                  window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
                 }}
               >
                 <Phone className="h-4 w-4" />
