@@ -1,0 +1,22 @@
+# CMS Express
+
+> Serviços de encanador, eletricista e marceneiro na zona sul de São Paulo. Atendimento ágil em bairros como Moema, Brooklin, Ipiranga, Vila Mariana e Chácara Santo Antônio. Orçamento grátis pelo WhatsApp (11) 97748-0538.
+
+## Páginas
+
+- [Início](/): Apresentação da CMS Express, serviços e bairros atendidos.
+- [Encanador](/encanador): Serviços de encanamento residencial e comercial.
+- [Eletricista](/eletricista): Instalações e reparos elétricos.
+- [Marcenaria](/marcenaria): Móveis sob medida e reparos em madeira.
+- [Montador de Móveis](/montador-de-moveis): Montagem de móveis em domicílio.
+
+## Guias
+
+- [Móveis Planejados vs Sob Medida](/guia-moveis-planejados-vs-sob-medida): Diferenças, vantagens e como escolher.
+
+## Bairros atendidos (exemplos)
+
+- [Marcenaria em Ipiranga](/marcenaria-ipiranga)
+- [Marcenaria em Vila Mariana](/marcenaria-vila-mariana)
+- [Marcenaria em Moema](/marcenaria-moema)
+- [Eletricista em Chácara Klabin](/eletricista-chacara-klabin)
