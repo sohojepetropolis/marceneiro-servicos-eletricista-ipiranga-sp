@@ -10,6 +10,7 @@ import ElectricalPage from "./pages/services/ElectricalPage";
 import CarpentryPage from "./pages/services/CarpentryPage";
 import FurnitureAssemblyPage from "./pages/services/FurnitureAssemblyPage";
 import ServiceNeighborhoodPage from "./pages/services/ServiceNeighborhoodPage";
+import MoveisPlanejadosVsSobMedidaPage from "./pages/guides/MoveisPlanejadosVsSobMedidaPage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,10 @@ const App = () => (
           <Route path="/eletricista" element={<ElectricalPage />} />
           <Route path="/marcenaria" element={<CarpentryPage />} />
           <Route path="/montador-de-moveis" element={<FurnitureAssemblyPage />} />
+
+          {/* Guides */}
+          <Route path="/guia-moveis-planejados-vs-sob-medida" element={<MoveisPlanejadosVsSobMedidaPage />} />
+
           
           {/* Service + Neighborhood Pages */}
           <Route path="/:serviceSlug-:neighborhoodSlug" element={<ServiceNeighborhoodPage />} />
