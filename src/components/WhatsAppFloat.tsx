@@ -59,6 +59,7 @@ export const WhatsAppFloat = () => {
         onClick={handleWhatsAppClick}
         className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-elegant hover:shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse hover:animate-none"
         size="icon"
+        aria-label="Falar no WhatsApp"
       >
         <MessageCircle className="h-7 w-7 text-white" />
       </Button>
