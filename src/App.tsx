@@ -10,6 +10,7 @@ import ElectricalPage from "./pages/services/ElectricalPage";
 import CarpentryPage from "./pages/services/CarpentryPage";
 import FurnitureAssemblyPage from "./pages/services/FurnitureAssemblyPage";
 import ServiceNeighborhoodPage from "./pages/services/ServiceNeighborhoodPage";
+import MoveisPlanejadosVsSobMedidaPage from "./pages/guides/MoveisPlanejadosVsSobMedidaPage";
 
 const queryClient = new QueryClient();
 
