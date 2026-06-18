@@ -7,7 +7,7 @@ const PlumbingPage = () => {
   
   useSEO({
     title: "Encanador na Zona Sul de São Paulo - Atendimento 24h | CMS Express",
-    description: "Serviços de encanamento em Moema, Brooklin, Campo Belo e região. Desentupimento, vazamentos, instalação de torneiras. Orçamento grátis: (11) 92004-1659",
+    description: "Serviços de encanamento em Moema, Brooklin, Campo Belo e região. Desentupimento, vazamentos, instalação de torneiras. Orçamento grátis: (11) 97748-0538",
     keywords: "encanador zona sul, encanador moema, encanador brooklin, encanador ipiranga, desentupimento zona sul, vazamento são paulo",
     canonical: `${window.location.origin}/encanador`
   });

@@ -28,7 +28,7 @@ Nome: ${formData.name}
 Telefone: ${formData.phone}
 Mensagem: ${formData.message}`;
 
-    const whatsappUrl = `https://wa.me/5511920041659?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/5511977480538?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, "_blank");
     
     toast.success("Redirecionando para o WhatsApp...");
@@ -69,7 +69,7 @@ Mensagem: ${formData.message}`;
                     </div>
                     <div>
                       <h4 className="font-semibold text-cms-black">Telefone</h4>
-                      <p className="text-muted-foreground">(11) 92004-1659</p>
+                      <p className="text-muted-foreground">(11) 97748-0538</p>
                     </div>
                   </div>
                 </CardContent>
@@ -187,7 +187,7 @@ Mensagem: ${formData.message}`;
                       type="button" 
                       variant="whatsapp" 
                       size="lg"
-                      onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
+                      onClick={() => window.open("https://wa.me/5511977480538", "_blank")}
                     >
                       <Phone className="h-5 w-5" />
                       Falar Direto no WhatsApp

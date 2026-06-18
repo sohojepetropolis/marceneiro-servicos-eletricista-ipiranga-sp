@@ -48,7 +48,7 @@ const ServiceNeighborhoodPage = () => {
 
   useSEO({
     title: `${service.name} em ${neighborhood.name} - Atendimento Rápido | CMS Express`,
-    description: `${service.name} especializado em ${neighborhood.name}. ${service.description}. Orçamento grátis: (11) 92004-1659`,
+    description: `${service.name} especializado em ${neighborhood.name}. ${service.description}. Orçamento grátis: (11) 97748-0538`,
     keywords: `${service.slug} ${neighborhood.slug}, ${service.slug} ${neighborhood.name}, serviços ${neighborhood.name}, ${service.slug} zona sul`,
     canonical: `${window.location.origin}/${sSlug}-${nSlug}`
   });
