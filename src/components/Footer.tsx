@@ -23,7 +23,7 @@ export const Footer = () => {
             <Button 
               variant="whatsapp" 
               size="sm"
-              onClick={() => window.open("https://wa.me/5511920041659", "_blank")}
+              onClick={() => window.open("https://wa.me/5511977480538", "_blank")}
             >
               <MessageCircle className="h-4 w-4" />
               WhatsApp
@@ -64,7 +64,7 @@ export const Footer = () => {
             <div className="space-y-3 text-gray-300 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-cms-red" />
-                <span>(11) 92004-1659</span>
+                <span>(11) 97748-0538</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-cms-red" />
