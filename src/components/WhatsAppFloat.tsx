@@ -43,6 +43,7 @@ export const WhatsAppFloat = () => {
               <button 
                 onClick={() => setShowTooltip(false)}
                 className="ml-2 text-muted-foreground hover:text-foreground"
+                aria-label="Fechar aviso"
               >
                 <X className="h-3 w-3" />
               </button>
