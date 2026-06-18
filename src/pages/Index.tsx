@@ -11,8 +11,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 const Index = () => {
   useSEO({
-    title: "Serviços de Encanador, Eletricista e Marcenaria em Bairros Nobres da Zona Sul de São Paulo | CMS Express",
-    description: "Especialistas em encanamento, marcenaria e elétrica para Moema, Brooklin, Campo Belo e região nobre da zona sul. Atendimento ágil e profissional. Fale com a CMS Express: (11) 97748-0538",
+    title: "Encanador, Eletricista e Marcenaria SP | CMS Express",
+    description: "Encanador, eletricista e marceneiro na zona sul de São Paulo. Atendimento ágil em Moema, Brooklin, Ipiranga e região. Orçamento grátis: (11) 97748-0538.",
     keywords: "encanador zona sul são paulo, eletricista moema, marcenaria brooklin, serviços domésticos bairros nobres, ipiranga",
     canonical: window.location.origin
   });
