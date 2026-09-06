@@ -68,12 +68,12 @@ export const HeroSection = () => {
             <div className="grid grid-cols-1 gap-6">
               <img 
                 src={escritorioImage} 
-                alt="Escritório MAGNVITA - Empresa especializada em serviços de encanamento, elétrica e marcenaria na zona sul de São Paulo"
+                alt="Escritório da MAGNVITA Marido de Aluguel, empresa de manutenção residencial no Ipiranga, São Paulo"
                 className="rounded-2xl shadow-elegant w-full h-64 object-cover"
               />
               <img 
                 src={equipeImage} 
-                alt="Equipe profissional MAGNVITA - Encanadores, Eletricistas e Marceneiros especializados em bairros nobres da zona sul de São Paulo"
+                alt="Equipe MAGNVITA de marido de aluguel, encanadores, eletricistas e marceneiros que atendem o Ipiranga e região"
                 className="rounded-2xl shadow-elegant w-full h-64 object-cover"
               />
             </div>
