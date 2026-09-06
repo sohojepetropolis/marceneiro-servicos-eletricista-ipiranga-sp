@@ -9,18 +9,6 @@ const ServiceNeighborhoodPage = () => {
 
   console.info('ServiceNeighborhoodPage params:', { serviceSlug, neighborhoodSlug, combined });
 
-  // Handle combined parameter (fallback route)
-  let finalServiceSlug = serviceSlug;
-  let finalNeighborhoodSlug = neighborhoodSlug;
-  
-  if (combined && !serviceSlug && !neighborhoodSlug) {
-    const hyphenIndex = combined.indexOf('-');
-    if (hyphenIndex > 0) {
-      finalServiceSlug = combined.substring(0, hyphenIndex);
-      finalNeighborhoodSlug = combined.substring(hyphenIndex + 1);
-    }
-  }
-
   // Normalize slugs (lowercase, trim, remove accents, replace spaces with hyphens)
   const normalize = (str?: string) =>
     (str ?? '')
@@ -30,6 +18,28 @@ const ServiceNeighborhoodPage = () => {
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/\s+/g, '-');
+
+  let finalServiceSlug = serviceSlug;
+  let finalNeighborhoodSlug = neighborhoodSlug;
+
+  // Handle combined parameter (fallback route): match the longest known service slug prefix
+  if (combined && !serviceSlug && !neighborhoodSlug) {
+    const full = normalize(combined);
+    const match = [...services]
+      .sort((a, b) => b.slug.length - a.slug.length)
+      .find((s) => full.startsWith(`${normalize(s.slug)}-`));
+
+    if (match) {
+      finalServiceSlug = match.slug;
+      finalNeighborhoodSlug = full.substring(normalize(match.slug).length + 1);
+    } else {
+      const hyphenIndex = full.indexOf('-');
+      if (hyphenIndex > 0) {
+        finalServiceSlug = full.substring(0, hyphenIndex);
+        finalNeighborhoodSlug = full.substring(hyphenIndex + 1);
+      }
+    }
+  }
 
   const sSlug = normalize(finalServiceSlug);
   const nSlug = normalize(finalNeighborhoodSlug);
@@ -47,7 +57,7 @@ const ServiceNeighborhoodPage = () => {
   }
 
   useSEO({
-    title: `${service.name} em ${neighborhood.name} | CMS Express`,
+    title: `${service.name} em ${neighborhood.name} | MAGNVITA`,
     description: `${service.name} em ${neighborhood.name}, zona sul de SP. Atendimento ágil e orçamento grátis: (11) 97748-0538.`,
     keywords: `${service.slug} ${neighborhood.slug}, ${service.slug} ${neighborhood.name}, serviços ${neighborhood.name}, ${service.slug} zona sul`,
     canonical: `${window.location.origin}/${sSlug}-${nSlug}`

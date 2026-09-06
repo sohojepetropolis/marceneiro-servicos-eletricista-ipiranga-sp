@@ -1,22 +1,25 @@
-# CMS Express
+# MAGNVITA Marido de Aluguel
 
-> Serviços de encanador, eletricista e marceneiro na zona sul de São Paulo. Atendimento ágil em bairros como Moema, Brooklin, Ipiranga, Vila Mariana e Chácara Santo Antônio. Orçamento grátis pelo WhatsApp (11) 97748-0538.
+> Manutenção residencial e marido de aluguel no Ipiranga, zona sul de São Paulo. Pequenos reparos, hidráulica, elétrica, marcenaria e montagem de móveis.
 
-## Páginas
+- Empresa: MAGNVITA Marido de Aluguel
+- Localização: Ipiranga, São Paulo/SP
+- WhatsApp/Telefone: (11) 97748-0538
+- Horário: segunda a sábado, 08:00 às 18:00
+- Bairros atendidos: Ipiranga, Sacomã, Cambuci, Vila Mariana, Mooca, Chácara Klabin, Moema, Brooklin, Campo Belo, Vila Olímpia, Itaim Bibi e demais bairros da zona sul.
 
-- [Início](/): Apresentação da CMS Express, serviços e bairros atendidos.
-- [Encanador](/encanador): Serviços de encanamento residencial e comercial.
-- [Eletricista](/eletricista): Instalações e reparos elétricos.
-- [Marcenaria](/marcenaria): Móveis sob medida e reparos em madeira.
-- [Montador de Móveis](/montador-de-moveis): Montagem de móveis em domicílio.
+## Serviços
+- Marido de aluguel e manutenção residencial: https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/marido-de-aluguel
+- Encanador: https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/encanador
+- Eletricista: https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/eletricista
+- Marcenaria: https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/marcenaria
+- Montador de móveis: https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/montador-de-moveis
 
-## Guias
+## Páginas por bairro
+Cada serviço possui página própria por bairro, no formato https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/[servico]-[bairro] (ex.: https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/marido-de-aluguel-ipiranga).
 
-- [Móveis Planejados vs Sob Medida](/guia-moveis-planejados-vs-sob-medida): Diferenças, vantagens e como escolher.
+## Conteúdo
+- Guia: móveis planejados vs. sob medida: https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/guia-moveis-planejados-vs-sob-medida
 
-## Bairros atendidos (exemplos)
-
-- [Marcenaria em Ipiranga](/marcenaria-ipiranga)
-- [Marcenaria em Vila Mariana](/marcenaria-vila-mariana)
-- [Marcenaria em Moema](/marcenaria-moema)
-- [Eletricista em Chácara Klabin](/eletricista-chacara-klabin)
+## Sitemap
+https://marceneiro-servicos-eletricista-ipiranga-sp.lovable.app/sitemap.xml

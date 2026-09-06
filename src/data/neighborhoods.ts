@@ -1,102 +1,120 @@
 export const neighborhoods = [
-  { 
-    name: "Moema", 
-    slug: "moema",
-    highlight: true,
-    description: "Bairro nobre da zona sul, conhecido por seus edifícios residenciais de alto padrão"
-  },
-  { 
-    name: "Brooklin", 
-    slug: "brooklin",
-    highlight: true,
-    description: "Região empresarial e residencial em constante crescimento"
-  },
-  { 
-    name: "Campo Belo", 
-    slug: "campo-belo",
-    highlight: true,
-    description: "Bairro residencial tradicional com excelente infraestrutura"
-  },
-  { 
-    name: "Vila Olímpia", 
-    slug: "vila-olimpia",
-    highlight: true,
-    description: "Centro empresarial moderno com alta demanda por serviços especializados"
-  },
-  { 
-    name: "Itaim Bibi", 
-    slug: "itaim-bibi",
-    highlight: true,
-    description: "Hub corporativo e residencial de luxo"
-  },
-  { 
-    name: "Ipiranga", 
+  {
+    name: "Ipiranga",
     slug: "ipiranga",
     highlight: true,
-    description: "Bairro histórico e tradicional com crescente valorização imobiliária"
+    description: "Nossa base de atendimento: bairro histórico e residencial com forte demanda por manutenção predial e residencial"
   },
-  { 
-    name: "Vila Nova Conceição", 
+  {
+    name: "Sacomã",
+    slug: "sacoma",
+    highlight: true,
+    description: "Bairro vizinho ao Ipiranga, com muitos condomínios e casas que precisam de reparos frequentes"
+  },
+  {
+    name: "Cambuci",
+    slug: "cambuci",
+    highlight: true,
+    description: "Região central e tradicional, ao lado do Ipiranga, com imóveis antigos que exigem manutenção constante"
+  },
+  {
+    name: "Vila Mariana",
+    slug: "vila-mariana",
+    highlight: true,
+    description: "Bairro tradicional com boa infraestrutura urbana e grande número de apartamentos"
+  },
+  {
+    name: "Mooca",
+    slug: "mooca",
+    highlight: true,
+    description: "Bairro vizinho com casas antigas, sobrados e novos edifícios residenciais"
+  },
+  {
+    name: "Chácara Klabin",
+    slug: "chacara-klabin",
+    highlight: true,
+    description: "Bairro residencial arborizado com boa qualidade de vida, a poucos minutos do Ipiranga"
+  },
+  {
+    name: "Moema",
+    slug: "moema",
+    highlight: false,
+    description: "Bairro nobre da zona sul, conhecido por seus edifícios residenciais de alto padrão"
+  },
+  {
+    name: "Brooklin",
+    slug: "brooklin",
+    highlight: false,
+    description: "Região empresarial e residencial em constante crescimento"
+  },
+  {
+    name: "Campo Belo",
+    slug: "campo-belo",
+    highlight: false,
+    description: "Bairro residencial tradicional com excelente infraestrutura"
+  },
+  {
+    name: "Vila Olímpia",
+    slug: "vila-olimpia",
+    highlight: false,
+    description: "Centro empresarial moderno com alta demanda por serviços especializados"
+  },
+  {
+    name: "Itaim Bibi",
+    slug: "itaim-bibi",
+    highlight: false,
+    description: "Hub corporativo e residencial de luxo"
+  },
+  {
+    name: "Vila Nova Conceição",
     slug: "vila-nova-conceicao",
     highlight: false,
     description: "Área residencial premium próxima ao Ibirapuera"
   },
-  { 
-    name: "Jardim Paulista", 
+  {
+    name: "Jardim Paulista",
     slug: "jardim-paulista",
     highlight: false,
     description: "Bairro sofisticado com residências e comércios de alto padrão"
   },
-  { 
-    name: "Cidade Jardim", 
+  {
+    name: "Cidade Jardim",
     slug: "cidade-jardim",
     highlight: false,
     description: "Região exclusiva com mansões e condomínios de luxo"
   },
-  { 
-    name: "Jardim Europa", 
+  {
+    name: "Jardim Europa",
     slug: "jardim-europa",
     highlight: false,
     description: "Área residencial nobre com casas e apartamentos de alto valor"
   },
-  { 
-    name: "Vila Mariana", 
-    slug: "vila-mariana",
-    highlight: false,
-    description: "Bairro tradicional com boa infraestrutura urbana"
-  },
-  { 
-    name: "Chácara Santo Antônio", 
+  {
+    name: "Chácara Santo Antônio",
     slug: "chacara-santo-antonio",
     highlight: false,
     description: "Região tranquila com casas e edifícios residenciais"
   },
-  { 
-    name: "Socorro", 
+  {
+    name: "Socorro",
     slug: "socorro",
     highlight: false,
     description: "Bairro em desenvolvimento com crescente demanda por serviços"
   },
-  { 
-    name: "Paraíso", 
+  {
+    name: "Paraíso",
     slug: "paraiso",
     highlight: false,
     description: "Área central bem localizada próxima à Avenida Paulista"
   },
-  { 
-    name: "Vila Cordeiro", 
+  {
+    name: "Vila Cordeiro",
     slug: "vila-cordeiro",
     highlight: false,
     description: "Região residencial próxima ao complexo empresarial"
   },
-  { 
-    name: "Chácara Klabin", 
-    slug: "chacara-klabin",
-    highlight: false,
-    description: "Bairro residencial arborizado com boa qualidade de vida"
-  },
-  { 
-    name: "Planalto Paulista", 
+  {
+    name: "Planalto Paulista",
     slug: "planalto-paulista",
     highlight: false,
     description: "Área residencial tranquila com fácil acesso aos principais centros"
@@ -104,6 +122,23 @@ export const neighborhoods = [
 ];
 
 export const services = [
+  {
+    name: "Marido de Aluguel",
+    slug: "marido-de-aluguel",
+    title: "Marido de Aluguel e Manutenção Residencial",
+    description: "Todos os pequenos reparos da casa resolvidos por um profissional só, com hora marcada",
+    icon: "Wrench",
+    services: [
+      "Pequenos reparos hidráulicos e elétricos",
+      "Instalação de prateleiras, quadros e suportes de TV",
+      "Montagem e ajuste de móveis",
+      "Troca de tomadas, interruptores e lâmpadas",
+      "Reparo de portas, fechaduras e dobradiças",
+      "Vedação de box, pias e janelas",
+      "Instalação de chuveiros, torneiras e duchas",
+      "Retoques de pintura e acabamentos"
+    ]
+  },
   {
     name: "Encanador",
     slug: "encanador",

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
-import cmsLogo from "@/assets/cms-express-logo.jpg";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,13 +15,10 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <img 
-              src={cmsLogo} 
-              alt="CMS Express - Serviços de Encanador, Eletricista e Marcenaria"
-              className="h-10 w-auto"
-            />
-          </div>
+          <a href="/" className="flex items-baseline gap-2">
+            <span className="text-2xl font-bold tracking-tight text-cms-black">MAGN<span className="text-cms-red">VITA</span></span>
+            <span className="hidden sm:inline text-xs text-muted-foreground uppercase tracking-wider">Marido de Aluguel</span>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -65,7 +61,7 @@ export const Header = () => {
               size="sm"
               className="hidden sm:flex"
               onClick={() => {
-                const message = "Olá! Encontrei a CMS Express e gostaria de saber mais sobre os serviços disponíveis.";
+                const message = "Olá! Encontrei a MAGNVITA e gostaria de saber mais sobre os serviços disponíveis.";
                 window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
               }}
             >
@@ -124,7 +120,7 @@ export const Header = () => {
                 size="sm"
                 className="mt-2 w-fit"
                 onClick={() => {
-                  const message = "Olá! Encontrei a CMS Express e gostaria de saber mais sobre os serviços disponíveis.";
+                  const message = "Olá! Encontrei a MAGNVITA e gostaria de saber mais sobre os serviços disponíveis.";
                   window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
                 }}
               >

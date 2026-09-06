@@ -9,6 +9,7 @@ import PlumbingPage from "./pages/services/PlumbingPage";
 import ElectricalPage from "./pages/services/ElectricalPage";
 import CarpentryPage from "./pages/services/CarpentryPage";
 import FurnitureAssemblyPage from "./pages/services/FurnitureAssemblyPage";
+import HandymanPage from "./pages/services/HandymanPage";
 import ServiceNeighborhoodPage from "./pages/services/ServiceNeighborhoodPage";
 import MoveisPlanejadosVsSobMedidaPage from "./pages/guides/MoveisPlanejadosVsSobMedidaPage";
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           
           {/* Service Pages */}
+          <Route path="/marido-de-aluguel" element={<HandymanPage />} />
           <Route path="/encanador" element={<PlumbingPage />} />
           <Route path="/eletricista" element={<ElectricalPage />} />
           <Route path="/marcenaria" element={<CarpentryPage />} />

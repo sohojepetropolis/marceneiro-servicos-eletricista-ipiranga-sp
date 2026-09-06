@@ -66,7 +66,7 @@ export const NeighborhoodMap = ({ neighborhood }: NeighborhoodMapProps) => {
         .setLngLat(coordinates)
         .setPopup(
           new mapboxgl.Popup()
-            .setHTML(`<div class="p-2"><strong>${neighborhood.name}</strong><br>CMS Express atende esta região</div>`)
+            .setHTML(`<div class="p-2"><strong>${neighborhood.name}</strong><br>MAGNVITA atende esta região</div>`)
         )
         .addTo(map.current);
 
@@ -187,7 +187,7 @@ export const NeighborhoodMap = ({ neighborhood }: NeighborhoodMapProps) => {
           style={{ minHeight: '300px' }}
         />
         <p className="text-sm text-muted-foreground mt-2">
-          Área de atendimento da CMS Express em {neighborhood.name} e região
+          Área de atendimento da MAGNVITA em {neighborhood.name} e região
         </p>
       </CardContent>
     </Card>
