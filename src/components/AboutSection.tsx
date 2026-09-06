@@ -10,8 +10,8 @@ export const AboutSection = () => {
             Sobre a <span className="text-cms-red">MAGNVITA</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Especializada em serviços domésticos de alta qualidade, a MAGNVITA 
-            é referência em soluções de encanamento, marcenaria e elétrica na zona sul de São Paulo.
+            Marido de aluguel e manutenção residencial no Ipiranga. A MAGNVITA resolve 
+            pequenos reparos e serviços especializados de hidráulica, elétrica e marcenaria em toda a região.
           </p>
         </div>
 
@@ -22,8 +22,8 @@ export const AboutSection = () => {
             </h3>
             <p className="text-muted-foreground mb-6">
               Com mais de 5 anos de experiência no mercado, nossa equipe é formada por 
-              profissionais certificados e especializados em atender as necessidades 
-              específicas dos bairros mais exclusivos da zona sul paulistana.
+              profissionais certificados e especializados na manutenção de casas e 
+              apartamentos do Ipiranga e dos bairros vizinhos da zona sul paulistana.
             </p>
             <p className="text-muted-foreground mb-6">
               Nos destacamos pela agilidade, qualidade técnica e compromisso com a 
@@ -31,9 +31,9 @@ export const AboutSection = () => {
               garantindo resultados duradouros e eficientes.
             </p>
             <p className="text-muted-foreground">
-              Nossa localização estratégica na zona sul nos permite oferecer 
-              atendimento rápido e personalizado, com profundo conhecimento das 
-              características e necessidades dos imóveis da região.
+              Por estarmos no Ipiranga, conseguimos atender rápido em Sacomã, Cambuci, 
+              Vila Mariana, Mooca e Chácara Klabin, com profundo conhecimento dos imóveis 
+              antigos e dos condomínios da região.
             </p>
           </div>
 

@@ -11,14 +11,13 @@ export const HeroSection = () => {
           {/* Text Content */}
           <div>
             <h1 className="text-4xl lg:text-5xl font-bold text-cms-black mb-6 leading-tight">
-              Soluções em <span className="text-cms-red">Encanamento</span>, 
-              <span className="text-cms-red"> Marcenaria</span> e 
-              <span className="text-cms-red"> Elétrica</span> para a Zona Sul de SP
+              <span className="text-cms-red">Marido de Aluguel</span> no Ipiranga: 
+              manutenção residencial e pequenos reparos com hora marcada
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8">
-              Atendimento ágil e profissional nos bairros mais exclusivos da zona sul. 
-              Expertise técnica com a qualidade que seu lar merece.
+              A MAGNVITA resolve reparos hidráulicos, elétricos, marcenaria e montagem 
+              de móveis no Ipiranga e bairros vizinhos, com atendimento ágil e preço fechado antes de começar.
             </p>
 
             {/* Benefits */}
@@ -29,7 +28,7 @@ export const HeroSection = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-cms-red" />
-                <span className="text-foreground">Atendimento exclusivo em bairros nobres</span>
+                <span className="text-foreground">Atendimento no Ipiranga e região no mesmo dia</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-cms-red" />
@@ -47,7 +46,7 @@ export const HeroSection = () => {
                 variant="hero" 
                 size="lg"
                 onClick={() => {
-                  const message = "Olá! Vi os serviços no site da MAGNVITA e gostaria de solicitar um orçamento para encanamento/elétrica/marcenaria na zona sul.";
+                  const message = "Olá! Vi os serviços no site da MAGNVITA e gostaria de solicitar um orçamento para manutenção residencial no Ipiranga.";
                   window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
                 }}
               >

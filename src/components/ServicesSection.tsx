@@ -5,9 +5,27 @@ import { Link } from "react-router-dom";
 import encanadorImage from "@/assets/encanador-cms-express.png";
 import eletricistaImage from "@/assets/eletricista-cms-express.png";
 import marcenariaImage from "@/assets/marcenaria-cms-express.png";
+import maridoImage from "@/assets/marido-de-aluguel-magnvita.jpg";
 
 export const ServicesSection = () => {
   const services = [
+    {
+      title: "Marido de Aluguel",
+      slug: "marido-de-aluguel",
+      icon: <Wrench className="h-8 w-8 text-cms-red" />,
+      image: maridoImage,
+      description: "Manutenção residencial completa: um profissional para todos os pequenos reparos",
+      services: [
+        "Pequenos reparos hidráulicos e elétricos",
+        "Instalação de prateleiras, quadros e suporte de TV",
+        "Montagem e ajuste de móveis",
+        "Troca de tomadas, interruptores e lâmpadas",
+        "Reparo de portas, fechaduras e dobradiças",
+        "Vedação de box, pias e janelas",
+        "Retoques de pintura e acabamentos",
+        "Manutenção preventiva do imóvel"
+      ]
+    },
     {
       title: "Encanador",
       slug: "encanador",
@@ -86,8 +104,8 @@ export const ServicesSection = () => {
             Nossos <span className="text-cms-red">Serviços</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferecemos soluções completas em encanamento, elétrica e marcenaria, 
-            com a qualidade e agilidade que os bairros nobres da zona sul merecem.
+            Manutenção residencial no Ipiranga e região: do pequeno reparo de marido de aluguel 
+            aos serviços especializados de encanamento, elétrica, marcenaria e montagem de móveis.
           </p>
         </div>
 
@@ -110,7 +128,7 @@ export const ServicesSection = () => {
                 <div className="mb-6">
                   <img 
                     src={service.image} 
-                    alt={`${service.title} - MAGNVITA zona sul São Paulo`}
+                    alt={`${service.title} - MAGNVITA Ipiranga, São Paulo`}
                     className="w-full h-48 object-cover rounded-lg"
                   />
                 </div>
@@ -141,6 +159,7 @@ export const ServicesSection = () => {
                     className="flex-1"
                     onClick={() => {
                       const serviceMessages = {
+                        "Marido de Aluguel": "Olá! Preciso de um marido de aluguel no Ipiranga para manutenção residencial. Vi no site da MAGNVITA e gostaria de um orçamento.",
                         "Encanador": "Olá! Preciso de um encanador na zona sul. Vi no site da MAGNVITA e gostaria de um orçamento.",
                         "Eletricista": "Olá! Preciso de um eletricista na zona sul. Vi no site da MAGNVITA e gostaria de um orçamento.",
                         "Marcenaria": "Olá! Preciso de serviços de marcenaria na zona sul. Vi no site da MAGNVITA e gostaria de um orçamento.",

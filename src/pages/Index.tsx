@@ -11,9 +11,9 @@ import { useSEO } from "@/hooks/useSEO";
 
 const Index = () => {
   useSEO({
-    title: "Encanador, Eletricista e Marcenaria SP | MAGNVITA",
-    description: "Encanador, eletricista e marceneiro na zona sul de São Paulo. Atendimento ágil em Moema, Brooklin, Ipiranga e região. Orçamento grátis: (11) 97748-0538.",
-    keywords: "encanador zona sul são paulo, eletricista moema, marcenaria brooklin, serviços domésticos bairros nobres, ipiranga",
+    title: "Marido de Aluguel no Ipiranga | MAGNVITA Manutenção",
+    description: "Marido de aluguel e manutenção residencial no Ipiranga: reparos hidráulicos, elétricos, marcenaria e montagem de móveis. Orçamento grátis: (11) 97748-0538.",
+    keywords: "marido de aluguel ipiranga, manutenção residencial ipiranga, pequenos reparos ipiranga, encanador ipiranga, eletricista ipiranga, montador de móveis ipiranga",
     canonical: window.location.origin
   });
 
