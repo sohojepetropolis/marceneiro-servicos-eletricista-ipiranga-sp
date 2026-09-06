@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="md:col-span-1">
             <img 
               src={cmsLogo} 
-              alt="CMS Express"
+              alt="MAGNVITA"
               className="h-12 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 text-sm mb-4">
@@ -68,7 +68,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-cms-red" />
-                <span>contato@cmsexpress.com.br</span>
+                <span>contato@magnvita.com.br</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-cms-red" />
@@ -90,7 +90,7 @@ export const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} CMS Express. Todos os direitos reservados.
+              © {currentYear} MAGNVITA. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <button 

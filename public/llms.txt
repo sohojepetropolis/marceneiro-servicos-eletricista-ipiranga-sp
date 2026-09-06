@@ -1,10 +1,10 @@
-# CMS Express
+# MAGNVITA
 
 > Serviços de encanador, eletricista e marceneiro na zona sul de São Paulo. Atendimento ágil em bairros como Moema, Brooklin, Ipiranga, Vila Mariana e Chácara Santo Antônio. Orçamento grátis pelo WhatsApp (11) 97748-0538.
 
 ## Páginas
 
-- [Início](/): Apresentação da CMS Express, serviços e bairros atendidos.
+- [Início](/): Apresentação da MAGNVITA, serviços e bairros atendidos.
 - [Encanador](/encanador): Serviços de encanamento residencial e comercial.
 - [Eletricista](/eletricista): Instalações e reparos elétricos.
 - [Marcenaria](/marcenaria): Móveis sob medida e reparos em madeira.

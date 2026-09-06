@@ -19,7 +19,7 @@ export const Header = () => {
           <div className="flex items-center space-x-2">
             <img 
               src={cmsLogo} 
-              alt="CMS Express - Serviços de Encanador, Eletricista e Marcenaria"
+              alt="MAGNVITA - Serviços de Encanador, Eletricista e Marcenaria"
               className="h-10 w-auto"
             />
           </div>
@@ -65,7 +65,7 @@ export const Header = () => {
               size="sm"
               className="hidden sm:flex"
               onClick={() => {
-                const message = "Olá! Encontrei a CMS Express e gostaria de saber mais sobre os serviços disponíveis.";
+                const message = "Olá! Encontrei a MAGNVITA e gostaria de saber mais sobre os serviços disponíveis.";
                 window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
               }}
             >
@@ -124,7 +124,7 @@ export const Header = () => {
                 size="sm"
                 className="mt-2 w-fit"
                 onClick={() => {
-                  const message = "Olá! Encontrei a CMS Express e gostaria de saber mais sobre os serviços disponíveis.";
+                  const message = "Olá! Encontrei a MAGNVITA e gostaria de saber mais sobre os serviços disponíveis.";
                   window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
                 }}
               >

@@ -110,7 +110,7 @@ export const ServicesSection = () => {
                 <div className="mb-6">
                   <img 
                     src={service.image} 
-                    alt={`${service.title} - CMS Express zona sul São Paulo`}
+                    alt={`${service.title} - MAGNVITA zona sul São Paulo`}
                     className="w-full h-48 object-cover rounded-lg"
                   />
                 </div>
@@ -141,10 +141,10 @@ export const ServicesSection = () => {
                     className="flex-1"
                     onClick={() => {
                       const serviceMessages = {
-                        "Encanador": "Olá! Preciso de um encanador na zona sul. Vi no site da CMS Express e gostaria de um orçamento.",
-                        "Eletricista": "Olá! Preciso de um eletricista na zona sul. Vi no site da CMS Express e gostaria de um orçamento.",
-                        "Marcenaria": "Olá! Preciso de serviços de marcenaria na zona sul. Vi no site da CMS Express e gostaria de um orçamento.",
-                        "Montador de Móveis": "Olá! Preciso de um montador de móveis na zona sul. Vi no site da CMS Express e gostaria de um orçamento."
+                        "Encanador": "Olá! Preciso de um encanador na zona sul. Vi no site da MAGNVITA e gostaria de um orçamento.",
+                        "Eletricista": "Olá! Preciso de um eletricista na zona sul. Vi no site da MAGNVITA e gostaria de um orçamento.",
+                        "Marcenaria": "Olá! Preciso de serviços de marcenaria na zona sul. Vi no site da MAGNVITA e gostaria de um orçamento.",
+                        "Montador de Móveis": "Olá! Preciso de um montador de móveis na zona sul. Vi no site da MAGNVITA e gostaria de um orçamento."
                       };
                       const message = serviceMessages[service.title as keyof typeof serviceMessages];
                       window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
@@ -164,7 +164,7 @@ export const ServicesSection = () => {
             variant="hero" 
             size="lg"
             onClick={() => {
-              const message = "Olá! Vi todos os serviços no site da CMS Express e gostaria de falar com um especialista para solicitar orçamento.";
+              const message = "Olá! Vi todos os serviços no site da MAGNVITA e gostaria de falar com um especialista para solicitar orçamento.";
               window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
             }}
           >

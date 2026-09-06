@@ -47,7 +47,7 @@ export const HeroSection = () => {
                 variant="hero" 
                 size="lg"
                 onClick={() => {
-                  const message = "Olá! Vi os serviços no site da CMS Express e gostaria de solicitar um orçamento para encanamento/elétrica/marcenaria na zona sul.";
+                  const message = "Olá! Vi os serviços no site da MAGNVITA e gostaria de solicitar um orçamento para encanamento/elétrica/marcenaria na zona sul.";
                   window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
                 }}
               >
@@ -69,12 +69,12 @@ export const HeroSection = () => {
             <div className="grid grid-cols-1 gap-6">
               <img 
                 src={escritorioImage} 
-                alt="Escritório CMS Express - Empresa especializada em serviços de encanamento, elétrica e marcenaria na zona sul de São Paulo"
+                alt="Escritório MAGNVITA - Empresa especializada em serviços de encanamento, elétrica e marcenaria na zona sul de São Paulo"
                 className="rounded-2xl shadow-elegant w-full h-64 object-cover"
               />
               <img 
                 src={equipeImage} 
-                alt="Equipe profissional CMS Express - Encanadores, Eletricistas e Marceneiros especializados em bairros nobres da zona sul de São Paulo"
+                alt="Equipe profissional MAGNVITA - Encanadores, Eletricistas e Marceneiros especializados em bairros nobres da zona sul de São Paulo"
                 className="rounded-2xl shadow-elegant w-full h-64 object-cover"
               />
             </div>

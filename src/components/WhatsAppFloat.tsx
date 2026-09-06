@@ -19,7 +19,7 @@ export const WhatsAppFloat = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const message = "Olá! Vim através do site da CMS Express e gostaria de solicitar um orçamento.";
+    const message = "Olá! Vim através do site da MAGNVITA e gostaria de solicitar um orçamento.";
     window.open(`https://wa.me/5511977480538?text=${encodeURIComponent(message)}`, "_blank");
   };
 

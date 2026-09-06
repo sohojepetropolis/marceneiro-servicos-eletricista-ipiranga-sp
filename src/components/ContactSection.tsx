@@ -83,7 +83,7 @@ Mensagem: ${formData.message}`;
                     </div>
                     <div>
                       <h4 className="font-semibold text-cms-black">E-mail</h4>
-                      <p className="text-muted-foreground">contato@cmsexpress.com.br</p>
+                      <p className="text-muted-foreground">contato@magnvita.com.br</p>
                     </div>
                   </div>
                 </CardContent>
@@ -197,7 +197,7 @@ Mensagem: ${formData.message}`;
 
                 <div className="mt-8 p-4 bg-cms-gray rounded-lg">
                   <h4 className="font-semibold text-cms-black mb-2">
-                    Por que escolher a CMS Express?
+                    Por que escolher a MAGNVITA?
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>✓ Orçamento gratuito e sem compromisso</li>
