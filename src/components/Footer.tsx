@@ -1,6 +1,5 @@
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import cmsLogo from "@/assets/cms-express-logo.jpg";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,14 +10,13 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-1">
-            <img 
-              src={cmsLogo} 
-              alt="MAGNVITA"
-              className="h-12 w-auto mb-4 brightness-0 invert"
-            />
+            <div className="text-2xl font-bold tracking-tight mb-2">
+              MAGN<span className="text-cms-red">VITA</span>
+            </div>
+            <p className="text-xs uppercase tracking-wider text-gray-400 mb-4">Marido de Aluguel</p>
             <p className="text-gray-300 text-sm mb-4">
-              Especialistas em serviços de encanamento, elétrica e marcenaria 
-              para os bairros nobres da zona sul de São Paulo.
+              Manutenção residencial e pequenos reparos no Ipiranga e bairros 
+              vizinhos da zona sul de São Paulo.
             </p>
             <Button 
               variant="whatsapp" 
@@ -34,9 +32,11 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-cms-red">Serviços</h4>
             <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Marido de Aluguel</li>
               <li>Encanamento Residencial</li>
               <li>Instalações Elétricas</li>
               <li>Marcenaria e Móveis</li>
+              <li>Montagem de Móveis</li>
               <li>Reparos Emergenciais</li>
               <li>Manutenção Preventiva</li>
               <li>Orçamento Gratuito</li>
@@ -47,14 +47,14 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-cms-red">Principais Bairros</h4>
             <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Ipiranga</li>
+              <li>Sacomã</li>
+              <li>Cambuci</li>
+              <li>Vila Mariana</li>
+              <li>Mooca</li>
+              <li>Chácara Klabin</li>
               <li>Moema</li>
               <li>Brooklin</li>
-              <li>Campo Belo</li>
-              <li>Vila Olímpia</li>
-              <li>Cidade Jardim</li>
-              <li>Itaim Bibi</li>
-              <li>Vila Nova Conceição</li>
-              <li>Jardim Paulista</li>
             </ul>
           </div>
 
@@ -72,7 +72,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-cms-red" />
-                <span>Zona Sul - São Paulo/SP</span>
+                <span>Ipiranga - São Paulo/SP</span>
               </div>
               <div className="mt-4">
                 <p className="text-xs text-gray-400">
